@@ -1,0 +1,99 @@
+.linhaFilme{
+     margin-bottom: 30px;
+ }
+
+.linhaFilme h2{
+     margin: 0px 0px 0px 30px;
+ }
+
+.areaLinha{
+     overflow-x: hidden;
+     padding-left: 30px;
+}
+
+.listaLinha{
+    width: 100000px;
+}
+
+.itemLinha{
+    display: inline-block;
+    width: 190px;
+    cursor: pointer; 
+}
+
+.itemLinha img{
+    width: 100%;
+    transform: scale(0.95);
+    transition: all ease-in-out 0.2s;
+}
+
+.itemLinha img:hover{
+    transform: scale(1);
+}
+
+.mover-direita,
+.mover-esquerda{
+    position: absolute;
+    width: 40px;
+    height: 285px;
+    background-color: rgba(0,0,0, 0.5);
+    z-index:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.mover-direita{
+    left: 0;
+}
+
+.mover-esquerda{
+    right: 0;
+}
+
+.linhaFilme:hover .mover-direita,
+.linhaFilme:hover .mover-esquerda{
+    opacity: 1;
+}
+
+.Linha-comprar,
+.Linha-overview,
+.Linha-like,
+.Linha-deslike,
+.Linha-curtido,
+.Linha-descurtido,
+.Linha-comprado{
+    border-style: none;
+    background-color: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.Linha-comprar:hover,
+.Linha-overview:hover,
+.Linha-like:hover,
+.Linha-deslike:hover{
+    opacity: 1;
+    color: white;
+}
+
+.Linha-curtido{
+    color: rgb(0, 119, 255);
+}
+
+.Linha-descurtido{
+    color: red;
+}
+
+.Linha-comprado{
+    color: yellowgreen;
+    cursor: default;
+}

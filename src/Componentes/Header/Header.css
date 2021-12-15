@@ -1,0 +1,49 @@
+Header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    background: transparent;
+    transition: all ease 0.7s;
+}
+
+header.preto{
+    background-color: black;
+}
+.Header-logo,
+.Header-usuario{
+    height: 40px;
+}
+.Header-logo img,
+.Header-usuario img{
+    height: 100%;
+}
+
+.inicio,
+.famosinhos,
+.top,
+.romance,
+.comedia{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-style: none;
+    background-color: transparent;
+    color: white;
+    opacity: 1;
+}
+
+.inicio:hover,
+.famosinhos:hover,
+.top:hover,
+.romance:hover,
+.comedia:hover{
+    font-size:20px;
+    cursor: pointer;
+}
